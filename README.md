@@ -41,7 +41,7 @@ if(NOT cmake_utilities_FOUND)
 
   execute_process(${GIT_EXECUTABLE}
     COMMAND git submodule update --recursive
-    WORKING_DIRECTORY ${abstuse_SOURCE_DIR})
+    WORKING_DIRECTORY ${PROJECT_SOURCE_DIR})
   
 endif()
 ```
