@@ -21,8 +21,7 @@ endif()
 
 FetchContent_GetProperties(cmake_utilities)
 if(NOT cmake_utilities_POPULATED)
-  FetchContent_Populate(cmake_utilities)
+  FetchContent_MakeAvailable(cmake_utilities)
   list(INSERT CMAKE_MODULE_PATH 0 ${cmake_utilities_SOURCE_DIR})
   set(CMakeUtilities_FOUND TRUE)
 endif()
-
